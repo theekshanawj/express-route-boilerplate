@@ -1,0 +1,22 @@
+{
+  "name": "express-route-bootstrap",
+  "version": "1.0.0",
+  "description": "Initialize an express application with controller, server and other directories",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "keywords": [
+    "express",
+    "init",
+    "nodejs"
+  ],
+  "author": "Theekshana Wijesinghe",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "jest": "^25.1.0"
+  }
+}

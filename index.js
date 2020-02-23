@@ -88,5 +88,5 @@ const initExpress = ({ pathToRoutes, pathToMiddleware, rootRouteName, port, list
   // Listen to defined port if defined, else default port
   app.listen(port || DEFULT_PORT, listenCallback);
 };
-initExpress({ pathToRoutes: './controllers/', pathToMiddleware: './middleware/', port: 5000, listenCallback: () => {console.log('app started')}});
+
 module.exports = initExpress;

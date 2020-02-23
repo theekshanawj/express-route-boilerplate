@@ -1,0 +1,7 @@
+node_modules/
+test-coverage/
+controllers/
+middleware/
+services/
+tests/
+*.config.js

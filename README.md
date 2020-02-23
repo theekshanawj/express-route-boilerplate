@@ -3,7 +3,7 @@ Boilerplate code for an Express application which allows to write express routes
 
 ## How to add 
 
-Install [express-route-bootstrap](https://www.npmjs.com/package/node-file-navigator)
+Install [express-route-bootstrap](https://www.npmjs.com/package/express-route-bootstrap)
 
 ```
 npm i express-route-bootstrap

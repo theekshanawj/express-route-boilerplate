@@ -79,14 +79,14 @@ const initExpress = ({ pathToRoutes, pathToMiddleware, rootRouteName, port, list
   // Register middlware if middleware path is defined
   // Middlware should be registered before routes
   if (pathToMiddleware) {
-    registerMiddlware(__dirname, pathToMiddleware);
+    registerMiddlware(process.cwd(), pathToMiddleware);
   }
 
   // Register the routes in the application
-  registerRoutes(__dirname, pathToRoutes, rootRouteName || ROOT_ROUTE_NAME);
+  registerRoutes(process.cwd(), pathToRoutes, rootRouteName || ROOT_ROUTE_NAME);
 
   // Listen to defined port if defined, else default port
   app.listen(port || DEFULT_PORT, listenCallback);
 };
-
+initExpress({ pathToRoutes: './controllers/', pathToMiddleware: './middleware/', port: 5000, listenCallback: () => {console.log('app started')}});
 module.exports = initExpress;

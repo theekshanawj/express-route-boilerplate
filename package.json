@@ -1,6 +1,6 @@
 {
   "name": "express-route-boilerplate",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Boilerplate code for Express application with easy wiring of routes and middlware",
   "main": "index.js",
   "scripts": {

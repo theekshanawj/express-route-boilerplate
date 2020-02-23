@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path');
 
 const { getFiles, getAbsolutePath, getFileNameAndExtension, isExtensionValid, getRoute } = require('./util');
 
@@ -21,7 +22,7 @@ const registerRoutes = (basePath, pathToRoutes, rootRouteName) => {
         if (!isExtensionValid(extension, ALLOWED_FILE_EXTENSIONS)) return;
         try {
           // Import the route file
-          const controllerRoutes = require(pathToRoutes + routesFileName);
+          const controllerRoutes = require(path.join(basePath, pathToRoutes,routesFileName));
           const route = getRoute(routesFileName, rootRouteName);
           // Register the routes
           route && app.use(route, controllerRoutes);
@@ -46,7 +47,7 @@ const registerMiddlware = (basePath, pathToMiddleware) => {
         // Wrap around a another try catch to catch errors with require to avoid breaking the loop
         try {
           // Import the file
-          const middlewares = require(pathToMiddleware + middlewareFileName);
+          const middlewares = require(path.join(basePath, pathToMiddleware, middlewareFileName));
           if (!middlewares) return;
           // Add middle-wares to the App
           Object.values(middlewares).forEach((fnc) => {

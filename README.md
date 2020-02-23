@@ -3,15 +3,15 @@ Boilerplate code for an Express application which allows to write express routes
 
 ## How to add 
 
-Install [express-route-bootstrap](https://www.npmjs.com/package/express-route-bootstrap)
+Install [express-route-bootstrap](https://www.npmjs.com/package/express-route-boilerplate)
 
 ```
-npm i express-route-bootstrap
+npm i express-route-boilerplate
 ```
 
 Add to your application
 ```
-const initExpress = require('express-route-bootstrap');
+const initExpress = require('express-route-boilerplate');
 ```
 
 ## How to use 
@@ -85,7 +85,7 @@ In the `entrypoint` file, invoke the module
 ```
 // index.js 
 
-const initExpress = require('express-route-bootstrap'); // Import
+const initExpress = require('express-route-boilerplate'); // Import
 
 ....
 

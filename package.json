@@ -1,10 +1,14 @@
 {
-  "name": "express-route-bootstrap",
+  "name": "express-route-boilerplate",
   "version": "1.0.0",
-  "description": "Initialize an express application with controller, server and other directories",
-  "main": "app.js",
+  "description": "Boilerplate code for Express application with easy wiring of routes and middlware",
+  "main": "index.js",
   "scripts": {
-    "test": "jest --coverage --detectOpenHandles"
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theekshanawj/express-route-boilerplate.git"
   },
   "keywords": [
     "express",
@@ -16,6 +20,10 @@
   "dependencies": {
     "express": "^4.17.1"
   },
+  "bugs": {
+    "url": "https://github.com/theekshanawj/express-route-boilerplate/issues"
+  },
+  "homepage": "https://github.com/theekshanawj/express-route-boilerplate/blob/master/README.md",
   "devDependencies": {
     "jest": "^25.1.0"
   }
